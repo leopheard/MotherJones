@@ -51,7 +51,7 @@ def episodes2():
 @plugin.route('/episodes3/')
 def episodes3():
     soup2 = mainaddon.get_soup2(url2)
-    playable_podcast3 = mainaddon.get_playable_podcast2(soup2)
+    playable_podcast3 = mainaddon.get_playable_podcast3(soup2)
     items = mainaddon.compile_playable_podcast3(playable_podcast3)
     return items
 
