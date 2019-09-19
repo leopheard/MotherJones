@@ -3,7 +3,7 @@ import re
 from bs4 import BeautifulSoup
 
 url1 = "https://feeds.feedburner.com/TheMotherJonesPodcast"
-url2 = "https://itunes.apple.com/us/podcast/bite/id1090260338?mt=2"
+url2 = "http://feeds.feedburner.com/bite-podcast"
 
 def get_soup1(url1):
     page = requests.get(url1)
@@ -16,7 +16,7 @@ def get_soup2(url2):
     soup2 = BeautifulSoup(page.text, 'html.parser')
     print("type: ", type(soup2))
     return soup2
-get_soup2("https://itunes.apple.com/us/podcast/bite/id1090260338?mt=2")
+get_soup2("http://feeds.feedburner.com/bite-podcast")
 
 def get_playable_podcast1(soup1):
     subjects = []

@@ -2,7 +2,7 @@ from xbmcswift2 import Plugin, xbmcgui
 from resources.lib import mainaddon
 
 url1 = "https://feeds.feedburner.com/TheMotherJonesPodcast"
-url2 = "https://itunes.apple.com/us/podcast/bite/id1090260338?mt=2"
+url2 = "http://feeds.feedburner.com/bite-podcast"
 
 plugin = Plugin()
 @plugin.route('/')
