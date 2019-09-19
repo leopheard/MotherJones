@@ -2,6 +2,9 @@ import requests
 import re
 from bs4 import BeautifulSoup
 
+url1 = "https://feeds.feedburner.com/TheMotherJonesPodcast"
+url2 = "https://itunes.apple.com/us/podcast/bite/id1090260338?mt=2"
+
 def get_soup1(url1):
     page = requests.get(url1)
     soup1 = BeautifulSoup(page.text, 'html.parser')
